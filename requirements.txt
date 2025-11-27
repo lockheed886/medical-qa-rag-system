@@ -2,10 +2,26 @@ langchain==0.1.20
 langchain-google-genai==1.0.6
 langchain-community==0.0.38
 google-generativeai==0.7.2
-chromadb==0.4.24
+
+# Vector DB
 faiss-cpu==1.8.0
+
+# Optional: ChromaDB (but remove if not required)
+chromadb==0.4.24
+
+# Data handling
 pandas==2.0.3
-streamlit==1.32.2
 python-dotenv==1.0.1
+
+# Streamlit
+streamlit==1.32.2
+
+# Embeddings helper
 sentence-transformers==2.7.0
+
+# Tokenizer
 tiktoken==0.6.0
+
+# Extra fixes for Linux builds (required by sentence-transformers)
+torch==2.1.2
+torchvision==0.16.2
