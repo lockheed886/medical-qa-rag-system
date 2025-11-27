@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 
-st.set_page_config(page_title="Medical QA Assistant", page_icon="🏥")
+st.set_page_config(page_title="Medical QA Assistant", )
 
 @st.cache_resource
 def load_qa_chain():
