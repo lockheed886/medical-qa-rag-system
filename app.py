@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 
-st.set_page_config(page_title="Medical QA Assistant", )
+st.set_page_config(page_title="Medical QA Assistant",)
 
 @st.cache_resource
 def load_qa_chain():
@@ -53,15 +53,15 @@ Answer:"""
     return qa_chain
 
 # UI
-st.title("🏥 Medical QA Assistant")
-st.write("Ask questions about medical conditions, treatments, and procedures")
+st.title("Medical QA Assistant")
+st.write("Ask questions about medical conditions,treatments,and procedures")
 
 qa_chain = load_qa_chain()
 
-query = st.text_input("Enter your medical question:")
+query = st.text_input("Enter your medical question")
 
 if st.button("Get Answer") and query:
-    with st.spinner("Searching medical records..."):
+    with st.spinner("Searching medical records"):
         result = qa_chain({"query": query})
         
         st.subheader("Answer:")
