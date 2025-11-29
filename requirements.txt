@@ -1,13 +1,29 @@
+# Streamlit
+streamlit==1.36.0
+
+# LangChain
 langchain==0.2.12
+langchain-community==0.2.6
+langchain-core==0.2.4
+
+# Google GenAI
 langchain-google-genai==1.0.6
 google-generativeai==0.5.3
-langchain-community==0.2.1
+
+# Vector Databases
 chromadb==0.4.24
-faiss-cpu==1.8.0
+faiss-cpu==1.7.4
+
+# Embeddings (Compatible versions)
+sentence-transformers==2.2.2
+transformers==4.30.2
+huggingface-hub==0.16.4
+
+# Torch (Stable for Cloud)
+torch==2.0.1
+torchvision==0.15.2
+
+# Utilities
 pandas==2.0.3
-streamlit==1.32.2
 python-dotenv==1.0.1
-sentence-transformers==2.7.0
 tiktoken==0.6.0
-torch==2.1.2
-torchvision==0.16.2
